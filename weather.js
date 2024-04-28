@@ -61,14 +61,13 @@ let weather = {
     "November", "December"
 ];
 
-// Array of day names
+
 const dayNames = [
     "Sunday", "Monday", "Tuesday",
     "Wednesday", "Thursday", "Friday", "Saturday"
 ];
 
-// Format the date
+
 const formattedDate = `${dayNames[currentDate.getDay()]} ${currentDate.getDate()} ${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
 
-// Update the HTML element with the formatted date
 document.getElementById('dateContainer').innerText = formattedDate;
